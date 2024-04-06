@@ -115,7 +115,7 @@ There will be no response as windows firewall on the VM is blocking ICMP packets
 -	The displayed information will include Event ID 4625 (Failed Logon) along with details such as the attempted account username. Notably, the location is not explicitly mentioned; only the IP address is known at this stage. Subsequent steps will involve exploring methods to map the IP address to a geolocation for further analysis.<br /><br />
 <b>Steps:</b><br />
 (i) On the VM and search Windows Powershell ISE as administrator<br />
-(ii) Copy the <a href="https://github.com/gparakh102/Azure-Sentinel/blob/main/Sentinel%20Powershell%20script.txt">script</a> and paste in powershell ISE<br />
+(ii) Copy the <a href="https://github.com/Tejaspatel99/Azure_Sentinel/blob/main/PowerShell_Script">script</a> and paste in powershell ISE<br />
 <img src="https://i.postimg.cc/hvsm7LQJ/18.png" height="50%" width="50%" alt="Steps"/><br/<br/>
 (iii) The API key is going to be different for each person, and to get it, sign up at <a href="https://ipgeolocation.io/">ipgeolocation</a> and you immediately get API key<br />
 The image below is my custom API key.
@@ -148,7 +148,7 @@ Output. (Text in purple indicates failed login attempts to the VM)<br />
 <img src="https://i.postimg.cc/1tX01FDS/28.png" height="40%" width="40%" alt="Steps"/><br/<br/>
 (iii) <b><i>Add query</i></b><br />
 <img src="https://i.postimg.cc/rw29RK2G/29.png" height="25%" width="25%" alt="Steps"/><br/<br/>
-(iv) Paste the <a href="https://github.com/gparakh102/Azure-Sentinel/blob/main/Sentinel%20Query.txt">query</a> here, and filter Visualization by map
+(iv) Paste the <a href="https://github.com/Tejaspatel99/Azure_Sentinel/blob/main/query">query</a> here, and filter Visualization by map
 <img src="https://i.postimg.cc/sXLYj2Jh/30.png" height="50%" width="50%" alt="Steps"/><br/<br/>
 (v) Filter <b><i>metric label</i></b> by label<br />
 <img src="https://i.postimg.cc/Z5Px84JG/31.png" height="35%" width="35%" alt="Steps"/><br/<br/>
